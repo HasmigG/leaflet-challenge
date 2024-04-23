@@ -17,14 +17,6 @@ const init = async () => {
 
     let {features} = await d3.json(url);
 
-
-    // console.log(features[0]);
-    // console.log(features[0].geometry);
-    // console.log(features[0].id,features[0].geometry.coordinates);
-    // console.log(features[0].geometry.coordinates);
-
-
-
     features.forEach(({
         id,
         properties:{mag,place,time},
